@@ -1,50 +1,217 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Lucas Anjos</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucas Anjos | Desenvolvedor</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Lucas Anjos</h1>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="Sobre">
-        <h2>Sobre mim</h2>
-        <p>TEXTO EM FORMULAÇÃO MENTAL</p>
-        <img src="" alt="Profile Picture">
-    </section>
-    <section id="Projetos">
-        <h2>Projetos</h2>
-
-        <article>
-            <h3>Projeto: Estacionamento</h3>
-            <p>Projeto que concluiu meu segundo semestre da faculdade, projeto em terminal para gerenciamento de um estacionamento, usando Python e Postgre.</p>
-            <a href="#" target="_blank">Ver Projeto</a>
-        </article>
-
-    </section>
-    <section id="Contato">
-        <h2>Contatos</h2>
-        <p>Você pode entrar em contato comigo pelas redes abaixo:</p>
-        <ul>
-            <li><a href=" https://github.com/lucasanjos03 " target="_blank">Github</a></li>
-            <li><a href="https://www.linkedin.com/in/lucas-anjos-ar/" target="_blank">LinkedIn</a></li>
-            <li><a href="mailto:lucasanjosar@gmail.com">Email</a></li>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">Lucas<span>Anjos</span></div>
+      <nav class="nav">
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+          ☰
+        </button>
+        <ul class="nav-list" id="navList">
+          <li><a href="#hero">Início</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#skills">Stack</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contato</a></li>
         </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="section hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="hero-badge">Disponível para novos projetos</p>
+          <h1>
+            Experiências digitais<br />
+            <span>estáveis, performáticas e bem arquitetadas.</span>
+          </h1>
+          <p class="hero-subtitle">
+            Sou um desenvolvedor back-end focado em performance, segurança e boas práticas, construindo a base que mantém aplicações modernas no ar.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">Ver meus projetos</a>
+            <a href="#contact" class="btn btn-ghost">Falar comigo</a>
+          </div>
+          <div class="hero-links">
+            <span>Me encontre em:</span>
+            <a href="https://github.com/lucasanjos03" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/lucas-anjos-ar/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <!-- <a href="curriculo.pdf" target="_blank" rel="noreferrer">Baixar currículo</a> -->
+          </div>
+        </div>
+        <div class="hero-photo">
+          <!-- Troque a imagem para a sua -->
+          <div class="photo-placeholder">
+            Sua foto aqui
+          </div>
+        </div>
+      </div>
     </section>
-    <button id="modo-escuro">Ativar modo escuro</button>
-    <footer>
-        <p>&copy; 2025 Lucas Anjos. Todos os direitos reservados.</p>
-    </footer>
+
+    <!-- SOBRE / OVERVIEW -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>Sobre</h2>
+        <p class="section-intro">
+          Desenvolvedor em formação, apaixonado por codar e por transformar
+          ideias em experiências reais. Estou construindo meu portfólio com foco
+          em código limpo, boas práticas e projetos que resolvem problemas
+          reais.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS / STACK -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2>Stack & Ferramentas</h2>
+        <p class="section-intro">
+          Estas são algumas das tecnologias que estou estudando e utilizando
+          nos meus projetos.
+        </p>
+        <div class="skills-grid">
+          <div class="skills-group">
+            <h3>Frontend</h3>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3 (Flexbox, Grid)</li>
+              <li>JavaScript (ES6+)</li>
+            </ul>
+          </div>
+          <div class="skills-group">
+            <h3>Ferramentas</h3>
+            <ul>
+              <li>VS Code</li>
+              <li>Git & GitHub</li>
+              <li>Figma (noções básicas)</li>
+            </ul>
+          </div>
+          <div class="skills-group">
+            <h3>Em breve</h3>
+            <ul>
+              <li>React</li>
+              <li>Java</li>
+              <li>GO | Golang</li>
+              <li>TypeScript</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projetos em Destaque</h2>
+        <p class="section-intro">
+          Uma seleção de projetos que estou desenvolvendo para estudar e
+          colocar em prática o que aprendo.
+        </p>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>Projeto 1 – Aplicativo de Notas</h3>
+            <p>
+              Aplicação web simples para criar, editar e excluir notas,
+              focada em treinar HTML, CSS e JavaScript.
+            </p>
+            <p class="project-meta">Tecnologias: HTML, CSS, JS</p>
+            <a href="#" target="_blank" class="project-link">Ver projeto</a>
+          </article>
+
+          <article class="project-card">
+            <h3>Projeto 2 – Conversor de Moedas</h3>
+            <p>
+              Conversor de moedas que consome uma API de câmbio, com interface
+              responsiva e foco em boas práticas de JavaScript.
+            </p>
+            <p class="project-meta">Tecnologias: HTML, CSS, JS (API)</p>
+            <a href="#" target="_blank" class="project-link">Ver projeto</a>
+          </article>
+
+          <article class="project-card">
+            <h3>Projeto 3 – Página de Portfólio</h3>
+            <p>
+              Esta própria página, inspirada em portfólios profissionais,
+              criada para consolidar minha base em frontend.
+            </p>
+            <p class="project-meta">Tecnologias: HTML, CSS, JS</p>
+            <a href="#hero" class="project-link">Voltar ao topo</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section section-alt">
+      <div class="container">
+        <h2>Perguntas Frequentes</h2>
+        <div class="faq-list">
+          <details>
+            <summary>Que tipo de projetos você quer desenvolver?</summary>
+            <p>
+              Quero focar em sites institucionais, landing pages e pequenas
+              aplicações web que envolvam lógica de JavaScript e interfaces
+              bem cuidadas.
+            </p>
+          </details>
+
+          <details>
+            <summary>Você trabalha só ou em equipe?</summary>
+            <p>
+              No momento, estou focado em projetos pessoais e de estudo, mas
+              tenho interesse em colaborar com outros desenvolvedores e
+              designers para aprender ainda mais.
+            </p>
+          </details>
+
+          <details>
+            <summary>Quais tecnologias você pretende aprender em seguida?</summary>
+            <p>
+              Além de aprofundar em JavaScript, quero estudar React, consumo
+              de APIs, TypeScript e ferramentas modernas para criar aplicações
+              mais complexas.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contact" class="section">
+      <div class="container contact-section">
+        <div>
+          <h2>Vamos conversar?</h2>
+          <p class="section-intro">
+            Se você tiver interesse em algum projeto, colaboração ou apenas
+            quiser trocar uma ideia sobre desenvolvimento web, pode me chamar.
+          </p>
+        </div>
+        <div class="contact-box">
+          <p><strong>E-mail</strong></p>
+          <a href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Seu Nome · Portfólio</p>
+      <p>Construído com HTML, CSS e JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
